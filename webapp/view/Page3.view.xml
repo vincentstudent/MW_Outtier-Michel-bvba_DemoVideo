@@ -1,0 +1,48 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.githubRepo.controller.Page3" xmlns="sap.m">
+    <Page showHeader="true" title="project Contributors" showFooter="true" showNavButton="false">
+        <content>
+            <SearchField placeholder="Search" showSearchButton="true" visible="true" width="auto"/>
+            <ScrollContainer horizontal="true" vertical="true" width="100%" height="100%" visible="true">
+                <content>
+                    <List mode="SingleSelectMaster" width="100%" headerText="" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" visible="true">
+                        <infoToolbar/>
+                        <headerToolbar/>
+                        <items>
+                            <CustomListItem type="Active" selected="false" visible="true">
+                                <content>
+                                    <HBox alignItems="Center" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="SpaceAround" renderType="Div" visible="true" displayInline="false">
+                                        <items>
+                                            <Title text="example@example.com" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                                            <ObjectAttribute text="Voornaam Achternaam" active="false" visible="true"/>
+                                            <SegmentedButton width="auto" enabled="true" visible="true" class="sapUiTinyMargin">
+                                                <items>
+                                                    <SegmentedButtonItem text="Admin" width="auto" enabled="true"/>
+                                                    <SegmentedButtonItem text="read" width="auto" enabled="true"/>
+                                                    <SegmentedButtonItem text="write" width="auto" enabled="true"/>
+                                                </items>
+                                            </SegmentedButton>
+                                            <ObjectStatus text="Not Role Set" state="Error" visible="true"/>
+                                        </items>
+                                        <layoutData/>
+                                    </HBox>
+                                </content>
+                            </CustomListItem>
+                        </items>
+                    </List>
+                </content>
+            </ScrollContainer>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>
